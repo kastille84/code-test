@@ -1,0 +1,22 @@
+.list-view-item {
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+}
+
+.list-view-item__header {
+  position: absolute;
+  bottom: 0px;
+  padding-left: 12px;
+}
+
+.list-view-item__header .title {
+  margin-bottom: 6px;
+}
+.list-view-item__header .subtitle {
+  margin-top: 0px;
+  margin-bottom: 6px;
+}

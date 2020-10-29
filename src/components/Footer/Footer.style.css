@@ -1,0 +1,29 @@
+.app-footer {
+  width: 100%;
+  height: 50px;
+  background-color: #2a2a2a;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.app-footer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-footer figure {
+  width: 20px;
+  height: 20px;
+  margin: 6px 0px 0px 0px;
+}
+
+.app-footer img {
+  width: 100%;
+  height: 100%;
+}
+
+.app-footer p {
+  font-size: 10px;
+}

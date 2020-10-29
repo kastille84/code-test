@@ -1,0 +1,4 @@
+.list-view {
+  height: calc(100% - 100px);
+  overflow-y: auto;
+}

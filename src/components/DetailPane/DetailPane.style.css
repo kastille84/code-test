@@ -1,0 +1,24 @@
+.detail-pane {
+  width: 100% !important;
+  height: calc(100% - 50px);
+}
+
+.detail-pane__content {
+  display: flex;
+  flex-direction: column;
+}
+.detail-pane__content .title {
+  margin: 0px;
+}
+.detail-pane__content .subtitle {
+  margin: 0px;
+}
+
+.detail-pane .slide-pane__header {
+  background-color: #43e895;
+  color: white;
+}
+
+.detail-pane .slide-pane__content {
+  padding: 0px;
+}

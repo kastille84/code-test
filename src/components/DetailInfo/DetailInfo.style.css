@@ -1,0 +1,19 @@
+.detail-info {
+}
+
+.detail-info__header {
+  height: 60px;
+  background-color: #34b379;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detail-info__contact {
+  padding-top: 16px;
+  padding-left: 12px;
+}
+.detail-info__contact h2.title {
+  margin-bottom: 26px;
+}
