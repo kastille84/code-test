@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
 import { IRestaurantReducer } from '../../redux/reducers/restaurant';
@@ -22,7 +22,9 @@ const ListView:React.FunctionComponent<ListViewProps> = ({restaurant, getRestaur
 
   const renderList = () => {
     if (restaurant.fetchingRestaurants) {
-      return <p>Loading</p>
+      return <p>Loading...</p>
+    } else if (!restaurant.fetchingRestaurants && restaurant.fetchingRestaurantsError) {
+      return <p>{restaurant.fetchingRestaurantsError}</p>
     } else {
       return (
         <React.Fragment>
@@ -35,6 +37,7 @@ const ListView:React.FunctionComponent<ListViewProps> = ({restaurant, getRestaur
   return (
     <div className="list-view">
       {renderList()}
+      {restaurant.restaurants.length %2 !== 0 && <div className="list-view-item list-view-item__extra"></div>}
       <DetailPane />
     </div>
   )

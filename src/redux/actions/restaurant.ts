@@ -35,7 +35,8 @@ export const getRestaurants = () => {
     } catch (error) {
       dispatch<IRestaurantAction>({
         type: constants.RESTAURANT.GET_RESTAURANTS_FAIL,
-        payload: error,
+        payload:
+          "Whoops! Something went wrong. Please refresh the page and try again. If all else fails, contact Edwin Martinez: edwin.martinez.dev@gmail.com",
       });
     }
   };

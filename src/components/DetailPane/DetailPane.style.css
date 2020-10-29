@@ -17,8 +17,30 @@
 .detail-pane .slide-pane__header {
   background-color: #43e895;
   color: white;
+  flex: 0 0 50px;
+}
+
+.detail-pane .slide-pane__close {
+  padding: 0px 16px;
 }
 
 .detail-pane .slide-pane__content {
   padding: 0px;
+}
+
+/* Style for google map */
+.detail-pane .map .gmap-container {
+  height: 400px;
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .detail-pane {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .detail-pane {
+    width: 50% !important;
+    height: 100%;
+  }
 }

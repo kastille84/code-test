@@ -2,3 +2,12 @@
   height: calc(100% - 100px);
   overflow-y: auto;
 }
+
+@media screen and (min-width: 426px) {
+  .list-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 26px;
+  }
+}

@@ -9,6 +9,7 @@ import Header from '../Header/Header.component';
 import IRestaurant from '../../interface/restaurant';
 import { setSelectedRestaurant } from '../../redux/actions/restaurant';
 import './DetailPane.style.css';
+import Map from '../Map/Map.component';
 
 interface DetailPaneProps {
   restaurant: IRestaurant | null,
@@ -22,12 +23,12 @@ const DetailPane: React.FunctionComponent<DetailPaneProps> = ({restaurant, setSe
         className="detail-pane"
         isOpen={restaurant !== null}
         from="right"
-        title={Header}
+        title={<Header hideFirstEl={true}/>}
         onRequestClose={()=>{setSelectedRestaurant(null)}}
       >
         {restaurant &&
           <div className="detail-pane__content">
-            <div className="map"></div>
+            <Map location={restaurant.location} name={restaurant.name} />
             <DetailInfo restaurant={restaurant} />
           </div>        
         }

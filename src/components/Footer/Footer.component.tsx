@@ -4,9 +4,7 @@ import './Footer.style.css';
 import food from '../../images/tab_lunch@2x.png';
 import internets from '../../images/tab_internets@2x.png';
 
-interface FooterProps {
-  
-}
+interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
   return (

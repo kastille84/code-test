@@ -5,13 +5,15 @@ import IRestaurant from '../../interface/restaurant'
 export interface IRestaurantReducer {
   restaurants: IRestaurant[],
   fetchingRestaurants: boolean,
+  fetchingRestaurantsError: string,
   selectedRestaurant: IRestaurant | null
 }
 
 const initialState = {
   restaurants: [],
   fetchingRestaurants: false,
-  selectedRestaurant: null
+  fetchingRestaurantsError: '',
+  selectedRestaurant: null,
 }
 
 export default (state:IRestaurantReducer = initialState, action:Action) => {
@@ -31,7 +33,7 @@ export default (state:IRestaurantReducer = initialState, action:Action) => {
       return {
         ...state,
         fetchingRestaurants: false,
-        restaurants: action.payload
+        fetchingRestaurantsError: action.payload
       };
     case constants.RESTAURANT.SET_SELECTED_RESTAURANT:
       return {

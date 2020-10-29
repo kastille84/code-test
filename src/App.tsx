@@ -9,7 +9,7 @@ import ListView from './containers/ListView/ListView.component';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header hideFirstEl={false} />
       <ListView />
       <Footer />
     </div> 

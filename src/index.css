@@ -28,3 +28,15 @@ body {
 .dark-text {
   color: #2a2a2a;
 }
+
+@media screen and (min-width: 1025px) {
+  .header-title {
+    font-size: 21px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+}

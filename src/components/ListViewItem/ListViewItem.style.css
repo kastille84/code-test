@@ -6,11 +6,19 @@
   cursor: pointer;
   position: relative;
 }
+.list-view-item:hover {
+  opacity: 0.8;
+}
 
 .list-view-item__header {
   position: absolute;
   bottom: 0px;
   padding-left: 12px;
+}
+
+.list-view-item__extra {
+  display: none;
+  cursor: initial;
 }
 
 .list-view-item__header .title {
@@ -19,4 +27,35 @@
 .list-view-item__header .subtitle {
   margin-top: 0px;
   margin-bottom: 6px;
+}
+
+@media screen and (min-width: 426px) {
+  .list-view-item {
+    width: 45%;
+    margin-bottom: 26px;
+  }
+  .list-view-item:nth-child(odd) {
+    margin-right: 2.5%;
+  }
+  .list-view-item__extra {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) and (min-width: 1024px) {
+  .list-view-item {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .list-view-item {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .list-view-item {
+    height: 280px;
+  }
 }

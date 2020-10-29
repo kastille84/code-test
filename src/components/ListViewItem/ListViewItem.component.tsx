@@ -1,10 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import bg from '../../images/cellGradientBackground@2x.png';
 
+import bg from '../../images/cellGradientBackground@2x.png';
 import IRestaurant from '../../interface/restaurant';
 import { setSelectedRestaurant } from '../../redux/actions/restaurant';
-
 
 import './ListViewItem.style.css';
 
@@ -14,7 +13,6 @@ interface ListViewItemProp {
 }
 
 const ListViewItem: React.FunctionComponent<ListViewItemProp> = ({restaurant, setSelectedRestaurant}) => {
-
   return (
   <div 
     className="list-view-item" 
