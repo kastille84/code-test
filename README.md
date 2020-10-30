@@ -1,4 +1,4 @@
-# Lunch Type (code test)
+# Lunch Tyme
 
 This project was created by Edwin Martinez.
 
