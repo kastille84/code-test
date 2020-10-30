@@ -1,0 +1,31 @@
+.error {
+  border: 1px solid #e85643;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 80%;
+  min-width: 200px;
+  margin: auto;
+  margin-top: 26px;
+}
+
+.error__header {
+  min-height: 26px;
+  background-color: #e85643;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.error__content {
+  padding: 12px;
+}
+
+.error__content p {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media screen and (min-width: 426px) {
+  .error {
+    width: 50%;
+  }
+}

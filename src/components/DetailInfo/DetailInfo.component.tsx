@@ -1,37 +1,32 @@
-import React from 'react';
-import IRestaurant from '../../interface/restaurant';
+import React from "react";
+import IRestaurant from "../../interface/restaurant";
 
 import "./DetailInfo.style.css";
 
 interface DetailInfoProps {
-  restaurant: IRestaurant
+  restaurant: IRestaurant;
 }
 
-const DetailInfo: React.FunctionComponent<DetailInfoProps> = ({restaurant}) => {
-
+const DetailInfo: React.FunctionComponent<DetailInfoProps> = ({
+  restaurant,
+}) => {
   const displayPhone = () => {
-    if ((restaurant.contact||{}).formattedPhone) {
+    if ((restaurant.contact || {}).formattedPhone) {
       return (
-        <h2 className="title dark-text">
-          {restaurant.contact.formattedPhone}
-        </h2>
-      )
+        <h2 className="title dark-text">{restaurant.contact.formattedPhone}</h2>
+      );
     } else {
       return null;
     }
-  }
+  };
 
   const displayTwitter = () => {
-    if ((restaurant.contact||{}).twitter) {
-      return (        
-      <h2 className="title dark-text">
-        @{restaurant.contact.twitter}
-      </h2>
-      )
+    if ((restaurant.contact || {}).twitter) {
+      return <h2 className="title dark-text">@{restaurant.contact.twitter}</h2>;
     } else {
       return null;
     }
-  }
+  };
 
   return (
     <div className="detail-info">
@@ -41,7 +36,7 @@ const DetailInfo: React.FunctionComponent<DetailInfoProps> = ({restaurant}) => {
       </div>
       <div className="detail-info__contact">
         <h2 className="title dark-text">
-          {restaurant.location.formattedAddress[0]} <br/>
+          {restaurant.location.formattedAddress[0]} <br />
           {restaurant.location.formattedAddress[1]}
         </h2>
         {displayPhone()}

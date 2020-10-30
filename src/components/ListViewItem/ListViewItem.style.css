@@ -5,9 +5,10 @@
   background-repeat: no-repeat;
   cursor: pointer;
   position: relative;
+  transition: opacity 0.3s;
 }
 .list-view-item:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .list-view-item__header {
@@ -56,6 +57,6 @@
 
 @media screen and (min-width: 1441px) {
   .list-view-item {
-    height: 280px;
+    height: 400px;
   }
 }

@@ -24,6 +24,10 @@
   padding: 0px 16px;
 }
 
+.detail-pane .slide-pane__title-wrapper {
+  margin-left: 0px;
+}
+
 .detail-pane .slide-pane__content {
   padding: 0px;
 }
@@ -42,5 +46,12 @@
   .detail-pane {
     width: 50% !important;
     height: 100%;
+  }
+}
+
+/* small height */
+@media screen and (max-height: 375px) {
+  .detail-pane .map .gmap-container {
+    height: 150px;
   }
 }

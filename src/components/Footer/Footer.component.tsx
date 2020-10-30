@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import './Footer.style.css';
-import food from '../../images/tab_lunch@2x.png';
-import internets from '../../images/tab_internets@2x.png';
+import "./Footer.style.css";
+import food from "../../images/tab_lunch@2x.png";
+import internets from "../../images/tab_internets@2x.png";
 
 interface FooterProps {}
 
@@ -11,13 +11,13 @@ const Footer: React.FC<FooterProps> = () => {
     <div className="app-footer">
       <div className="app-footer__item">
         <figure>
-          <img src={food} />
+          <img src={food} alt="lunch icon" />
         </figure>
         <p>lunch</p>
       </div>
       <div className="app-footer__item">
         <figure>
-          <img src={internets} />
+          <img src={internets} alt="internet icon" />
         </figure>
         <p>internets</p>
       </div>
